@@ -1,7 +1,13 @@
+spring:
+  cloud:
+    ineutils:
+      default-hostname: https://eurekaserver.perseidas.dev
 eureka:
   client:
     service-url:
       defaultZone: https://eurekaserver.perseidas.dev/eureka/
+   instance:
+    preferIpAddress: true
 management:
   info:
     env:
