@@ -2,6 +2,10 @@ spring:
   cloud:
     ineutils:
       default-hostname: https://eurekaserver.perseidas.dev
+      timeout-seconds: 10
+logging:
+  level:
+    org.springframework.cloud.commons.util.InetUtils: trace
 eureka:
   client:
     service-url:
