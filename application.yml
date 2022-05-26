@@ -1,17 +1,12 @@
-spring:
-  cloud:
-    ineutils:
-      default-hostname: https://eurekaserver.perseidas.dev
-      timeout-seconds: 10
-logging:
-  level:
-    org.springframework.cloud.commons.util.InetUtils: trace
 eureka:
   client:
+    registerWithEureka: true
+    fetchRegistry: true
     service-url:
       defaultZone: https://eurekaserver.perseidas.dev/eureka/
    instance:
     preferIpAddress: true
+
 management:
   info:
     env:
@@ -20,9 +15,19 @@ management:
     web:
       exposure:
         include: health,info 
+
 info:
   author: Ronilson Alves
   mail: falecom@ronilsonalves.com
 server:
   port: ${PORT:8080}
 message: Genereci Config
+
+spring:
+  cloud:
+    ineutils:
+      #default-hostname: https://eurekaserver.perseidas.dev
+      timeout-seconds: 10
+logging:
+  level:
+    org.springframework.cloud.commons.util.InetUtils: trace
