@@ -16,8 +16,8 @@ info:
   author: Ronilson Alves
   mail: falecom@ronilsonalves.com
 server:
-  port: ${PORT:8080}
-message: Genereci Config
+  port: ${PORT:8091}
+message: Generec Config
 
 spring:
   cloud:
