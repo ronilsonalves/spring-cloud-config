@@ -1,0 +1,4 @@
+server:
+  port: 8083
+  
+message: Consumindo do Config Server - Github source
