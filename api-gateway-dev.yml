@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: subscriptionRoute
+          uri: lb://BIBLIOTECA-SERVICE
+          predicates:
+            - Path=/biblioteca/**
+        - id: courseRoute
+          uri: lb://JOGOS-SERVICE
+          predicates:
+            - Path=/jogos/**
+
+info:
+  name: API Gateway Service para aula de revisão.
