@@ -2,7 +2,7 @@ eureka:
   client:
     service-url:
       #defaultZone: https://eurekaserver.perseidas.dev/eureka
-      defaultZone: https://springconfigcloud.azurewebsites.net/eureka
+      defaultZone: https://springeurekaserver.azurewebsites.net/eureka
 
 management:
   info:
